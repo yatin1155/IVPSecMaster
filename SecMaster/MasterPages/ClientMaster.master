@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="ClientMaster.master.cs" Inherits="ClientMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 5.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+  <head>
+    <title>IVP Sec Master </title>
+
+    <!-- Material Design Lite -->
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
+   <link rel="stylesheet" 
+    href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.red-purple.min.css" /> 
+    <!-- Material Design icon font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,500,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <!--Floating Buttons-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+     <link href="../Styles/floating.css" rel="stylesheet" type="text/css" />
+    <!-- Stock Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Stock Bootstrap CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Stock Bootstrap JS-->
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+    <!-- Wizard JS-->
+      <script src="../Scripts/wizard.js" type="text/javascript"></script>
+    <!-- Wizard CSS-->
+      <link href="../Styles/form-wizard.css" rel="stylesheet" type="text/css" />
+
+
+
+
+  </head>
+  <style>
+    body{background:#eee;}
+    
+  </style>
+  <body>
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+
+  <!-- Floating button-->
+  <a href="#" class="float" id="menu-add-query">
+  <i class="fa fa-plus my-float"></i>
+  </a>
+  <ul>
+  <li><a href="../ClientWebPages/ClientInsert.aspx">
+  <i class="fa fa-pencil-square-o my-float"></i>
+  </a></li>
+  <li><a href="#">
+  <i class="fa fa-upload my-float"></i>
+  </a></li>
+  
+  </ul>
+
+
+</body>
+</html>

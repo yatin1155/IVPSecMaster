@@ -1,0 +1,8 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPages/ClientMaster.master" AutoEventWireup="true" CodeFile="ClientInsertMaster.master.cs" Inherits="MasterPages_ClientInsertMaster" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolderInsert" runat="server">
+    </asp:ContentPlaceHolder>
+
+</asp:Content>
+
