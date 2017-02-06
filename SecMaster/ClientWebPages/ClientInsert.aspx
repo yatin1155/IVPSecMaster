@@ -1,27 +1,9 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/ClientInsertMaster.master" AutoEventWireup="true" CodeFile="ClientInsert.aspx.cs" Inherits="ClientWebPages_ClientInsert" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/ClientWithoutTabs.master" AutoEventWireup="true" CodeFile="ClientInsert.aspx.cs" Inherits="ClientWebPages_ClientInsert" %>
 
 <%-- Add content controls here --%>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolderInsert" Runat="Server">
  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-    <!-- Header Container -->
-  <header class="mdl-layout__header">
-    <div class="mdl-layout__header-row">
-      <!-- Title  of Header -->
-      <span class="mdl-layout-title">IVP Sec Master</span>
-    </div>
-    <!-- Tab Bar Container , and Tab links -->
-    
-  </header>
-    <!-- MDL Layout Header -->
-  <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">IVP Sec Master</span>
-    <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="#">Profile</a>
-        <a class="mdl-navigation__link" href="#">Logout</a>
-        <!--<a class="mdl-navigation__link" href="#">Contact</a>-->
-      </nav>
 
-  </div>
            <div class="container">
           <div class="stepwizard">
               <div class="stepwizard-row setup-panel">
