@@ -13,7 +13,6 @@ namespace RestService
     public class RestServiceImpl : IRestServiceImpl
     {
         #region IRestServiceImpl Members
-
         public string XMLData(string id)
         {
             return "You requested product " + id;
@@ -46,26 +45,18 @@ namespace RestService
                     con.Open();
                     SqlDataAdapter da = new SqlDataAdapter(cmd);
                     da.Fill(dt);
-                    //System.Web.Script.Serialization.JavaScriptSerializer serializer = new System.Web.Script.Serialization.JavaScriptSerializer();
-                    //List<Dictionary<string, object>> rows = new List<Dictionary<string, object>>();
-                    //Dictionary<string, object> row;
-                    //foreach (DataRow dr in dt.Rows)
-                    //{
-                    //    row = new Dictionary<string, object>();
-                    //    foreach (DataColumn col in dt.Columns)
-                    //    {
-                    //        row.Add(col.ColumnName, dr[col]);
-                    //    }
-                    //    rows.Add(row);
-                    //}
-                    ////return serializer.Serialize(rows);
-
                     return JsonConvert.SerializeObject(dt, Formatting.Indented);
                 }
             }
-        }            
-        
+        }
 
+        public Boolean UpsertEquity(string data)
+        {
+            BondPOCO bondPOCO = new BondPOCO();
+            EquityPOCO equityPOCO = new EquityPOCO();
+            Console.WriteLine("Service has been called " + data);
+            return false;
+        }
         #endregion
     }
 }

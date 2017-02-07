@@ -20,5 +20,13 @@ namespace RestService
             BodyStyle = WebMessageBodyStyle.Wrapped,
             UriTemplate = "json/{id}")]
         string GetJsonResult(string id);
+
+
+        [OperationContract]
+        [WebInvoke(Method = "POST",
+                    RequestFormat = WebMessageFormat.Json,
+                    ResponseFormat = WebMessageFormat.Json,
+                    UriTemplate = "UpsertEquity")]
+        string UpsertEquity(string name);
     }
 }

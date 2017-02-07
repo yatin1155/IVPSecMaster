@@ -66,6 +66,8 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="BondPOCO.cs" />
+    <Content Include="App_Code\EquityPOCO.cs" />
     <Compile Include="IRestServiceImpl.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RestServiceImpl.svc.cs">

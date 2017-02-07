@@ -26,19 +26,19 @@
     <script src="../Scripts/wizard.js" type="text/javascript"></script>
     <!-- Wizard CSS-->
     <link href="../Styles/form-wizard.css" rel="stylesheet" type="text/css" />
+
+    <!-- KnockOut JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.1/knockout-min.js"></script>
-    <script src="../Scripts/ServerScript.js" type="text/javascript"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/knockout.mapping/2.4.1/knockout.mapping.min.js"></script>
 
     <!--Awesome table generation-->
-    
     <script src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.js"></script>
     <link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/plug-ins/a5734b29083/integration/bootstrap/3/dataTables.bootstrap.css">
     <link rel="stylehseet" type="text/css" href="http://cdn.datatables.net/responsive/1.0.1/css/dataTables.responsive.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/knockout.mapping/2.4.1/knockout.mapping.min.js"></script>
-    <!-- jQuery DataTables http://datatables.net -->
 
     <script src="http://cdn.datatables.net/plug-ins/a5734b29083/integration/bootstrap/3/dataTables.bootstrap.js"></script>
     <script src="http://cdn.datatables.net/responsive/1.0.1/js/dataTables.responsive.js"></script>
+    <script src="../Scripts/ServerScript.js" type="text/javascript"></script>
     </script>
 </head>
 <style>

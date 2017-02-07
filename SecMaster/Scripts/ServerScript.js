@@ -17,10 +17,14 @@ $.getJSON("http://localhost:35798/RestServiceImpl.svc/json/bond", function (data
     var vm = new VM();
     ko.applyBindings(vm);
     // apply DataTables magic
-    //$("#datatables").DataTable( { responsive: true } );
+    
     var parsedata = JSON.parse(data.GetJsonResultResult);
     $.each(parsedata, function (index, value) {
         console.log(value);
         vm.items.push(value);
     });
+    $("#datatables").DataTable({
+        responsive: true
+    });
 });
+

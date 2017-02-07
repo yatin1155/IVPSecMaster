@@ -5,3 +5,8 @@ C:\Users\admin\Downloads\RestService\RestService\obj\Debug\RestService.dll
 C:\Users\admin\Downloads\RestService\RestService\obj\Debug\RestService.pdb
 C:\Users\admin\Downloads\RestService\RestService\bin\Newtonsoft.Json.dll
 C:\Users\admin\Downloads\RestService\RestService\bin\Newtonsoft.Json.xml
+D:\Sufiyan\IVPSecMaster\RestService\RestService\obj\Debug\ResolveAssemblyReference.cache
+D:\Sufiyan\IVPSecMaster\RestService\RestService\bin\RestService.dll
+D:\Sufiyan\IVPSecMaster\RestService\RestService\bin\RestService.pdb
+D:\Sufiyan\IVPSecMaster\RestService\RestService\obj\Debug\RestService.dll
+D:\Sufiyan\IVPSecMaster\RestService\RestService\obj\Debug\RestService.pdb

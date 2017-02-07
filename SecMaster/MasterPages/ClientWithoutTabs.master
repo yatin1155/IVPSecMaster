@@ -15,6 +15,8 @@
   <div class="mdl-layout__drawer">
     <span class="mdl-layout-title">IVP Sec Master</span>
     <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="#">Equity</a>
+        <a class="mdl-navigation__link" href="#">Bond</a>
         <a class="mdl-navigation__link" href="#">Profile</a>
         <a class="mdl-navigation__link" href="#">Logout</a>
         <!--<a class="mdl-navigation__link" href="#">Contact</a>-->
