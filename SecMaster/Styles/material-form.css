@@ -1,16 +1,16 @@
 .group { 
   position: relative; 
-  margin-bottom: 45px; 
+  margin-bottom: 20px; 
 }
 
 input {
-  font-size: 18px;
+  font-size: 15px;
   padding: 10px 10px 10px 5px;
   -webkit-appearance: none;
   display: block;
   background: #fafafa;
   color: #636363;
-  width: 80%;
+  width: 100%;
   border: none;
   border-radius: 0;
   border-bottom: 1px solid #757575;
@@ -23,7 +23,7 @@ input:focus { outline: none; }
 
 label {
   color: #999; 
-  font-size: 18px;
+  font-size: 15px;
   font-weight: normal;
   position: absolute;
   pointer-events: none;

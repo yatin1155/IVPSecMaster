@@ -12,6 +12,8 @@ namespace RestService
 {
     public class RestServiceImpl : IRestServiceImpl
     {
+        BondPOCO bondPOCO = new BondPOCO();
+        EquityPOCO equityPOCO = new EquityPOCO();
         #region IRestServiceImpl Members
         public string XMLData(string id)
         {
@@ -50,12 +52,11 @@ namespace RestService
             }
         }
 
-        public Boolean UpsertEquity(string data)
+        public string UpsertEquity(string data)
         {
-            BondPOCO bondPOCO = new BondPOCO();
-            EquityPOCO equityPOCO = new EquityPOCO();
+            
             Console.WriteLine("Service has been called " + data);
-            return false;
+            return "" ;
         }
         #endregion
     }

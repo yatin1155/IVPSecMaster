@@ -21,9 +21,7 @@
         <table style="margin-top:120px" id="datatables" class="table table-striped table-bordered">
             <thead>
                 <tr data-bind="foreach: columnNames">
-                    <th> <span data-bind="text: $data"></span>
-
-                    </th>
+                    <th> <span data-bind="text: $data"></span></th>
                 </tr>
             </thead>
             <tbody data-bind="foreach: items">

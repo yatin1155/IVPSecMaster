@@ -1,6 +1,7 @@
 ﻿<%@ Master Language="C#" MasterPageFile="~/MasterPages/ClientMaster.master" AutoEventWireup="true" CodeFile="ClientWithoutTabs.master.cs" Inherits="MasterPages_ClientInsertMaster" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+
  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <!-- Header Container -->
   <header class="mdl-layout__header">
@@ -15,8 +16,8 @@
   <div class="mdl-layout__drawer">
     <span class="mdl-layout-title">IVP Sec Master</span>
     <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="#">Equity</a>
-        <a class="mdl-navigation__link" href="#">Bond</a>
+        <a class="mdl-navigation__link" href="#" onclick="loadData('equity')" id="aEquity">Equity</a>
+        <a class="mdl-navigation__link" href="#" onclick="loadData('bond')" id="aBond">Bond</a>
         <a class="mdl-navigation__link" href="#">Profile</a>
         <a class="mdl-navigation__link" href="#">Logout</a>
         <!--<a class="mdl-navigation__link" href="#">Contact</a>-->
