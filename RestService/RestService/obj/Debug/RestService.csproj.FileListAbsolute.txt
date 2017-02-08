@@ -10,3 +10,8 @@ D:\Sufiyan\IVPSecMaster\RestService\RestService\bin\RestService.dll
 D:\Sufiyan\IVPSecMaster\RestService\RestService\bin\RestService.pdb
 D:\Sufiyan\IVPSecMaster\RestService\RestService\obj\Debug\RestService.dll
 D:\Sufiyan\IVPSecMaster\RestService\RestService\obj\Debug\RestService.pdb
+D:\FinalProject\IVPSecMaster\RestService\RestService\bin\RestService.dll
+D:\FinalProject\IVPSecMaster\RestService\RestService\bin\RestService.pdb
+D:\FinalProject\IVPSecMaster\RestService\RestService\obj\Debug\ResolveAssemblyReference.cache
+D:\FinalProject\IVPSecMaster\RestService\RestService\obj\Debug\RestService.dll
+D:\FinalProject\IVPSecMaster\RestService\RestService\obj\Debug\RestService.pdb
