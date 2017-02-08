@@ -74,9 +74,6 @@
                           <label>Bloomberg Unique Name</label>
                         </div>
                   </div>
-                  </div>
-                        <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
-                  </div>
               </div>
               <div class="row setup-content" id="step-2">
                   <div class="col-xs-4">
