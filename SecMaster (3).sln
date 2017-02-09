@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "SecMaster", "D:\Sufiyan\IVPSecMaster\SecMaster\", "{1D1A4A9A-F69F-472F-B9C9-30DD00580E26}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "SecMaster", "D:\FinalProject\IVPSecMaster\SecMaster\", "{1D1A4A9A-F69F-472F-B9C9-30DD00580E26}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
 		Debug.AspNetCompiler.VirtualPath = "/SecMaster"
@@ -21,7 +21,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "SecMaster", "D:\Sufiyan\IVP
 		VWDPort = "50243"
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestService", "D:\Sufiyan\IVPSecMaster\RestService\RestService\RestService.csproj", "{145F1D71-923D-4C33-AC57-6BEF6B31429B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestService", "D:\FinalProject\IVPSecMaster\RestService\RestService\RestService.csproj", "{145F1D71-923D-4C33-AC57-6BEF6B31429B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
