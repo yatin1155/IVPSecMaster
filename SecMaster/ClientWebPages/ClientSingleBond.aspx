@@ -39,7 +39,7 @@
     <!-- "is-active" class to set the default active tab -->
     <section class="mdl-layout__tab-panel is-active" id="scroll-tab-1">
       <div class="page-content">
-        <h1 runat="server" id="result">Security Summary</h1>
+        <h1 runat="server" id="result"></h1>
         <div class="col-xs-4">
                         <div class="group">
                           <input type="text" name=" Security_Name" required><span class="highlight"></span><span class="bar"></span>
@@ -74,7 +74,7 @@
     <!-- Tab No 2-->
     <section class="mdl-layout__tab-panel" id="scroll-tab-2">
       <div class="page-content">
-         <h1>Security Identifier</h1>
+         <h1></h1>
          <div class="col-xs-4">
                         <div class="group">
                           <input type="text" name="Bloomberg_Ticker " required><span class="highlight"></span><span class="bar"></span>
@@ -106,7 +106,7 @@
     <!-- Tab No 3-->
     <section class="mdl-layout__tab-panel" id="scroll-tab-3">
       <div class="page-content">
-       <h1>Security Details</h1>
+       <h1></h1>
        <div class="col-xs-4">
                         <div class="group">
                           <input type="text" name="First_Coupon_Date "  required><span class="highlight"></span><span class="bar"></span>
@@ -192,7 +192,7 @@
     <!-- Tab No 4-->
     <section class="mdl-layout__tab-panel" id="scroll-tab-4">
       <div class="page-content">
-         <h1>Risk</h1>
+         <h1></h1>
          <div class="col-xs-4">
                         <div class="group">
                           <input type="text" name="Duration "  required><span class="highlight"></span><span class="bar"></span>
@@ -223,7 +223,7 @@
     <!-- Tab No 5-->
     <section class="mdl-layout__tab-panel" id="scroll-tab-5">
       <div class="page-content">
-       <h1>Regulatory Details</h1>
+       <h1></h1>
        <div class="col-xs-3">
                         <div class="group">
                           <input type="text" name="Form_PF_Asset_Class " required><span class="highlight"></span><span class="bar"></span>
@@ -284,7 +284,7 @@
     <!-- Tab No 6-->
     <section class="mdl-layout__tab-panel" id="scroll-tab-6">
       <div class="page-content">
-         <h1>Reference Data</h1>
+         <h1></h1>
          <div class="col-xs-3">
                         <div class="group">
                           <input type="text" name="Issue_Country" required><span class="highlight"></span><span class="bar"></span>
@@ -325,7 +325,7 @@
     <!-- Tab No 7-->
     <section class="mdl-layout__tab-panel" id="scroll-tab-7">
       <div class="page-content">
-         <h1>Put Schedule</h1>
+         <h1></h1>
          <div class="col-xs-4">
                         <div class="group">
                           <input type="text" name="Put_Date" required><span class="highlight"></span><span class="bar"></span>
@@ -342,7 +342,7 @@
     <!-- Tab No 8-->
     <section class="mdl-layout__tab-panel" id="scroll-tab-8">
       <div class="page-content">
-         <h1>Pricing and Analytics</h1>
+         <h1></h1>
          <div class="col-xs-4">
                         <div class="group">
                           <input type="text" name="Ask_Price" required><span class="highlight"></span><span class="bar"></span>
@@ -384,7 +384,7 @@
     <!-- Tab No 9-->
     <section class="mdl-layout__tab-panel" id="scroll-tab-9">
       <div class="page-content">
-         <h1>Call Schedule</h1>
+         <h1></h1>
          <div class="col-xs-4">
                         <div class="group">
                           <input type="text" name="Call_Date" required><span class="highlight"></span><span class="bar"></span>

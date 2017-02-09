@@ -38,7 +38,7 @@
     <!-- "is-active" class to set the default active tab -->
     <section class="mdl-layout__tab-panel is-active" id="scroll-tab-1">
       <div class="page-content">
-        <h1 runat="server" id="result">Security Summary</h1>
+        <h1 runat="server" id="result"></h1>
             <div class="col-xs-4">
                 <div class="group">
                     <input type="text" required><span class="highlight"></span><span class="bar"></span>
@@ -73,7 +73,7 @@
      <!-- Tab No 2-->
     <section class="mdl-layout__tab-panel" id="scroll-tab-2">
       <div class="page-content">
-         <h1>Security Identifier</h1>
+         <h1></h1>
          <div class="col-xs-4">
                         <div class="group">
                           <input type="text" required><span class="highlight"></span><span class="bar"></span>
@@ -110,9 +110,9 @@
     </section>
     
     <!-- Tab No 3-->
-    <section class="mdl-layout__tab-panel" id="scroll-tab-2">
+    <section class="mdl-layout__tab-panel" id="scroll-tab-3">
       <div class="page-content">
-         <h1>Security Details</h1>
+         <h1></h1>
          <div class="col-xs-4">
                         <div class="group">
                           <input type="text" required><span class="highlight"></span><span class="bar"></span>
@@ -160,9 +160,9 @@
     </section>
     
     <!-- Tab No 4-->
-    <section class="mdl-layout__tab-panel" id="scroll-tab-3">
+    <section class="mdl-layout__tab-panel" id="scroll-tab-4">
       <div class="page-content">
-       <h1>Risk</h1>
+       <h1></h1>
        <div class="col-xs-4">
                         <div class="group">
                           <input type="text" required><span class="highlight"></span><span class="bar"></span>
@@ -190,9 +190,9 @@
     </section>
     
     <!-- Tab No 5-->
-    <section class="mdl-layout__tab-panel" id="scroll-tab-4">
+    <section class="mdl-layout__tab-panel" id="scroll-tab-5">
       <div class="page-content">
-         <h1>Regulatory Details</h1>
+         <h1></h1>
          <div class="col-xs-3">
                         <div class="group">
                           <input type="text" required><span class="highlight"></span><span class="bar"></span>
@@ -250,9 +250,9 @@
     </section>
     
     <!-- Tab No 6-->
-    <section class="mdl-layout__tab-panel" id="scroll-tab-5">
+    <section class="mdl-layout__tab-panel" id="scroll-tab-6">
       <div class="page-content">
-       <h1>Reference Data</h1>
+       <h1></h1>
        <div class="col-xs-3">
                         <div class="group">
                           <input type="text" required><span class="highlight"></span><span class="bar"></span>
@@ -307,9 +307,9 @@
     </section>
     
     <!-- Tab No 7-->
-    <section class="mdl-layout__tab-panel" id="scroll-tab-6">
+    <section class="mdl-layout__tab-panel" id="scroll-tab-7">
       <div class="page-content">
-         <h1>Pricing Details</h1>
+         <h1></h1>
          <div class="col-xs-4">
                         <div class="group">
                           <input type="text" required><span class="highlight"></span><span class="bar"></span>
@@ -349,9 +349,9 @@
     </section>
 
     <!-- Tab No 8-->
-    <section class="mdl-layout__tab-panel" id="scroll-tab-7">
+    <section class="mdl-layout__tab-panel" id="scroll-tab-8">
       <div class="page-content">
-         <h1>Dividend History</h1>
+         <h1></h1>
          <div class="col-xs-4">
                         <div class="group">
                           <input type="text" required><span class="highlight"></span><span class="bar"></span>
