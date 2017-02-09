@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Group4ModelStoreContainer" CdmEntityContainer="Group4Entities">
+    <EntitySetMapping Name="EmpTables">
+      <EntityTypeMapping TypeName="Group4Model.EmpTable">
+        <MappingFragment StoreEntitySet="EmpTable">
+          <ScalarProperty Name="EmpId" ColumnName="EmpId" />
+          <ScalarProperty Name="EmpName" ColumnName="EmpName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SM_BOND">
+      <EntityTypeMapping TypeName="Group4Model.SM_BOND">
+        <MappingFragment StoreEntitySet="SM_BOND">
+          <ScalarProperty Name="Bond_Id" ColumnName="Bond_Id" />
+          <ScalarProperty Name="Security_Description" ColumnName="Security_Description" />
+          <ScalarProperty Name="Security_Name" ColumnName="Security_Name" />
+          <ScalarProperty Name="Asset_Type" ColumnName="Asset_Type" />
+          <ScalarProperty Name="Trading_Factor" ColumnName="Trading_Factor" />
+          <ScalarProperty Name="Pricing_Factor" ColumnName="Pricing_Factor" />
+          <ScalarProperty Name="ISIN" ColumnName="ISIN" />
+          <ScalarProperty Name="BBG_Ticker" ColumnName="BBG_Ticker" />
+          <ScalarProperty Name="BBG_Unique_ID" ColumnName="BBG_Unique_ID" />
+          <ScalarProperty Name="CUSIP" ColumnName="CUSIP" />
+          <ScalarProperty Name="SEDOL" ColumnName="SEDOL" />
+          <ScalarProperty Name="First_Coupon_Date" ColumnName="First_Coupon_Date" />
+          <ScalarProperty Name="Cap" ColumnName="Cap" />
+          <ScalarProperty Name="Floor" ColumnName="Floor" />
+          <ScalarProperty Name="Coupon_Frequency" ColumnName="Coupon_Frequency" />
+          <ScalarProperty Name="Coupon" ColumnName="Coupon" />
+          <ScalarProperty Name="Coupon_Type" ColumnName="Coupon_Type" />
+          <ScalarProperty Name="Spread" ColumnName="Spread" />
+          <ScalarProperty Name="Callable_Flag" ColumnName="Callable_Flag" />
+          <ScalarProperty Name="Fix_To_Float_Flag" ColumnName="Fix_To_Float_Flag" />
+          <ScalarProperty Name="Putable_Flag" ColumnName="Putable_Flag" />
+          <ScalarProperty Name="Issue_Date" ColumnName="Issue_Date" />
+          <ScalarProperty Name="Last_Reset_Date" ColumnName="Last_Reset_Date" />
+          <ScalarProperty Name="Maturity" ColumnName="Maturity" />
+          <ScalarProperty Name="Call_Notification_Max_Days" ColumnName="Call_Notification_Max_Days" />
+          <ScalarProperty Name="Put_Notification_Max_Days" ColumnName="Put_Notification_Max_Days" />
+          <ScalarProperty Name="Penultimate_Coupon_Date" ColumnName="Penultimate_Coupon_Date" />
+          <ScalarProperty Name="Reset_Frequency" ColumnName="Reset_Frequency" />
+          <ScalarProperty Name="Has_Position" ColumnName="Has_Position" />
+          <ScalarProperty Name="Macaulay_Duration" ColumnName="Macaulay_Duration" />
+          <ScalarProperty Name="Volatility_30D" ColumnName="Volatility_30D" />
+          <ScalarProperty Name="Volatility_90D" ColumnName="Volatility_90D" />
+          <ScalarProperty Name="Convexity" ColumnName="Convexity" />
+          <ScalarProperty Name="Average_Volume_30D" ColumnName="Average_Volume_30D" />
+          <ScalarProperty Name="PF_Asset_Class" ColumnName="PF_Asset_Class" />
+          <ScalarProperty Name="PF_Country" ColumnName="PF_Country" />
+          <ScalarProperty Name="PF_Credit_Rating" ColumnName="PF_Credit_Rating" />
+          <ScalarProperty Name="PF_Currency" ColumnName="PF_Currency" />
+          <ScalarProperty Name="PF_Instrument" ColumnName="PF_Instrument" />
+          <ScalarProperty Name="PF_Liquidity_Profile" ColumnName="PF_Liquidity_Profile" />
+          <ScalarProperty Name="PF_Maturity" ColumnName="PF_Maturity" />
+          <ScalarProperty Name="PF_NAICS_Code" ColumnName="PF_NAICS_Code" />
+          <ScalarProperty Name="PF_Region" ColumnName="PF_Region" />
+          <ScalarProperty Name="PF_Sector" ColumnName="PF_Sector" />
+          <ScalarProperty Name="PF_Sub_Asset_Class" ColumnName="PF_Sub_Asset_Class" />
+          <ScalarProperty Name="Bloomberg_Industry_Group" ColumnName="Bloomberg_Industry_Group" />
+          <ScalarProperty Name="Bloomberg_Industry_Sub_Group" ColumnName="Bloomberg_Industry_Sub_Group" />
+          <ScalarProperty Name="Bloomberg_Industry_Sector" ColumnName="Bloomberg_Industry_Sector" />
+          <ScalarProperty Name="Country_of_Issuance" ColumnName="Country_of_Issuance" />
+          <ScalarProperty Name="Issue_Currency" ColumnName="Issue_Currency" />
+          <ScalarProperty Name="Issuer" ColumnName="Issuer" />
+          <ScalarProperty Name="Risk_Currency" ColumnName="Risk_Currency" />
+          <ScalarProperty Name="Put_Date" ColumnName="Put_Date" />
+          <ScalarProperty Name="Put_Price" ColumnName="Put_Price" />
+          <ScalarProperty Name="Ask_Price" ColumnName="Ask_Price" />
+          <ScalarProperty Name="High_Price" ColumnName="High_Price" />
+          <ScalarProperty Name="Low_Price" ColumnName="Low_Price" />
+          <ScalarProperty Name="Open_Price" ColumnName="Open_Price" />
+          <ScalarProperty Name="Volume" ColumnName="Volume" />
+          <ScalarProperty Name="Bid_Price" ColumnName="Bid_Price" />
+          <ScalarProperty Name="Last_Price" ColumnName="Last_Price" />
+          <ScalarProperty Name="Call_Date" ColumnName="Call_Date" />
+          <ScalarProperty Name="Call_Price" ColumnName="Call_Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SM_EQUITY">
+      <EntityTypeMapping TypeName="Group4Model.SM_EQUITY">
+        <MappingFragment StoreEntitySet="SM_EQUITY">
+          <ScalarProperty Name="Equity_Id" ColumnName="Equity_Id" />
+          <ScalarProperty Name="Security_Name" ColumnName="Security_Name" />
+          <ScalarProperty Name="Security_Description" ColumnName="Security_Description" />
+          <ScalarProperty Name="Has_Position" ColumnName="Has_Position" />
+          <ScalarProperty Name="Is_Active" ColumnName="Is_Active" />
+          <ScalarProperty Name="Round_Lot_Size" ColumnName="Round_Lot_Size" />
+          <ScalarProperty Name="Bloomberg_Unique_Name" ColumnName="Bloomberg_Unique_Name" />
+          <ScalarProperty Name="CUSIP" ColumnName="CUSIP" />
+          <ScalarProperty Name="ISIN" ColumnName="ISIN" />
+          <ScalarProperty Name="SEDOL" ColumnName="SEDOL" />
+          <ScalarProperty Name="Bloomberg_Ticker" ColumnName="Bloomberg_Ticker" />
+          <ScalarProperty Name="Bloomberg_Unique_ID" ColumnName="Bloomberg_Unique_ID" />
+          <ScalarProperty Name="Bloomberg_Global_ID" ColumnName="Bloomberg_Global_ID" />
+          <ScalarProperty Name="Bloomberg_Ticker_And_Exchange" ColumnName="Bloomberg_Ticker_And_Exchange" />
+          <ScalarProperty Name="Is_ADR" ColumnName="Is_ADR" />
+          <ScalarProperty Name="ADR_Underlying_Ticker" ColumnName="ADR_Underlying_Ticker" />
+          <ScalarProperty Name="ADR_Underlying_Currency" ColumnName="ADR_Underlying_Currency" />
+          <ScalarProperty Name="Shares_Per_ADR" ColumnName="Shares_Per_ADR" />
+          <ScalarProperty Name="IPO_Date" ColumnName="IPO_Date" />
+          <ScalarProperty Name="Pricing_Currency" ColumnName="Pricing_Currency" />
+          <ScalarProperty Name="Settle_Days" ColumnName="Settle_Days" />
+          <ScalarProperty Name="Total_Shares_Outstanding" ColumnName="Total_Shares_Outstanding" />
+          <ScalarProperty Name="Voting_Rights_Per_Share" ColumnName="Voting_Rights_Per_Share" />
+          <ScalarProperty Name="Average_Volume_20Day" ColumnName="Average_Volume_20Day" />
+          <ScalarProperty Name="Beta" ColumnName="Beta" />
+          <ScalarProperty Name="Short_Interest" ColumnName="Short_Interest" />
+          <ScalarProperty Name="YTD_Return" ColumnName="YTD_Return" />
+          <ScalarProperty Name="Price_Volatility_90Day" ColumnName="Price_Volatility_90Day" />
+          <ScalarProperty Name="Form_PF_Asset_Class" ColumnName="Form_PF_Asset_Class" />
+          <ScalarProperty Name="Form_PF_Country" ColumnName="Form_PF_Country" />
+          <ScalarProperty Name="Form_PF_Credit_Rating" ColumnName="Form_PF_Credit_Rating" />
+          <ScalarProperty Name="Form_PF_Currency" ColumnName="Form_PF_Currency" />
+          <ScalarProperty Name="Form_PF_Instrument" ColumnName="Form_PF_Instrument" />
+          <ScalarProperty Name="Form_PF_Liquidity_Profile" ColumnName="Form_PF_Liquidity_Profile" />
+          <ScalarProperty Name="Form_PF_Maturity" ColumnName="Form_PF_Maturity" />
+          <ScalarProperty Name="Form_PF_NAICS_Code" ColumnName="Form_PF_NAICS_Code" />
+          <ScalarProperty Name="Form_PF_Region" ColumnName="Form_PF_Region" />
+          <ScalarProperty Name="Form_PF_Sector" ColumnName="Form_PF_Sector" />
+          <ScalarProperty Name="Form_PF_Sub_Asset_Class" ColumnName="Form_PF_Sub_Asset_Class" />
+          <ScalarProperty Name="Issue_Country" ColumnName="Issue_Country" />
+          <ScalarProperty Name="Exchange" ColumnName="Exchange" />
+          <ScalarProperty Name="Issuer" ColumnName="Issuer" />
+          <ScalarProperty Name="Issue_Currency" ColumnName="Issue_Currency" />
+          <ScalarProperty Name="Trading_Currency" ColumnName="Trading_Currency" />
+          <ScalarProperty Name="Bloomberg_Industry_Sub_Group" ColumnName="Bloomberg_Industry_Sub_Group" />
+          <ScalarProperty Name="Bloomberg_Industry_Group" ColumnName="Bloomberg_Industry_Group" />
+          <ScalarProperty Name="Bloomberg_Industry_Sector" ColumnName="Bloomberg_Industry_Sector" />
+          <ScalarProperty Name="Country_Of_Incorporation" ColumnName="Country_Of_Incorporation" />
+          <ScalarProperty Name="Risk_Currency" ColumnName="Risk_Currency" />
+          <ScalarProperty Name="Open_Price" ColumnName="Open_Price" />
+          <ScalarProperty Name="Close_Price" ColumnName="Close_Price" />
+          <ScalarProperty Name="Volume" ColumnName="Volume" />
+          <ScalarProperty Name="Last_Price" ColumnName="Last_Price" />
+          <ScalarProperty Name="Ask_Price" ColumnName="Ask_Price" />
+          <ScalarProperty Name="Bid_Price" ColumnName="Bid_Price" />
+          <ScalarProperty Name="PE_Ratio" ColumnName="PE_Ratio" />
+          <ScalarProperty Name="Declared_Date" ColumnName="Declared_Date" />
+          <ScalarProperty Name="Ex_Date" ColumnName="Ex_Date" />
+          <ScalarProperty Name="Record_Date" ColumnName="Record_Date" />
+          <ScalarProperty Name="Pay_Date" ColumnName="Pay_Date" />
+          <ScalarProperty Name="Dividend_Amount" ColumnName="Dividend_Amount" />
+          <ScalarProperty Name="Frequency" ColumnName="Frequency" />
+          <ScalarProperty Name="Dividend_Type" ColumnName="Dividend_Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

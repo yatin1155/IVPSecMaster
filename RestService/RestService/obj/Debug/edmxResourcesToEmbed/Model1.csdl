@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Group4Model" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="Group4Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="EmpTables" EntityType="Group4Model.EmpTable" />
+    <EntitySet Name="SM_BOND" EntityType="Group4Model.SM_BOND" />
+    <EntitySet Name="SM_EQUITY" EntityType="Group4Model.SM_EQUITY" />
+  </EntityContainer>
+  <EntityType Name="EmpTable">
+    <Key>
+      <PropertyRef Name="EmpId" />
+    </Key>
+    <Property Name="EmpId" Type="Int32" Nullable="false" />
+    <Property Name="EmpName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="SM_BOND">
+    <Key>
+      <PropertyRef Name="Bond_Id" />
+    </Key>
+    <Property Name="Bond_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Security_Description" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Security_Name" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Asset_Type" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Trading_Factor" Type="Decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="Pricing_Factor" Type="Decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="ISIN" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="BBG_Ticker" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="BBG_Unique_ID" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CUSIP" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="SEDOL" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="First_Coupon_Date" Type="DateTime" Nullable="false" />
+    <Property Name="Cap" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Floor" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Coupon_Frequency" Type="Int32" Nullable="false" />
+    <Property Name="Coupon" Type="Decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="Coupon_Type" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Spread" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Callable_Flag" Type="Boolean" Nullable="false" />
+    <Property Name="Fix_To_Float_Flag" Type="Boolean" Nullable="false" />
+    <Property Name="Putable_Flag" Type="Boolean" Nullable="false" />
+    <Property Name="Issue_Date" Type="DateTime" Nullable="false" />
+    <Property Name="Last_Reset_Date" Type="DateTime" />
+    <Property Name="Maturity" Type="DateTime" Nullable="false" />
+    <Property Name="Call_Notification_Max_Days" Type="Decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="Put_Notification_Max_Days" Type="Int32" />
+    <Property Name="Penultimate_Coupon_Date" Type="DateTime" Nullable="false" />
+    <Property Name="Reset_Frequency" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Has_Position" Type="Boolean" Nullable="false" />
+    <Property Name="Macaulay_Duration" Type="Decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="Volatility_30D" Type="Decimal" Precision="20" Scale="10" />
+    <Property Name="Volatility_90D" Type="Decimal" Precision="20" Scale="10" />
+    <Property Name="Convexity" Type="Decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="Average_Volume_30D" Type="Decimal" Precision="20" Scale="10" />
+    <Property Name="PF_Asset_Class" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PF_Country" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PF_Credit_Rating" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PF_Currency" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PF_Instrument" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PF_Liquidity_Profile" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PF_Maturity" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PF_NAICS_Code" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PF_Region" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PF_Sector" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PF_Sub_Asset_Class" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Bloomberg_Industry_Group" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Bloomberg_Industry_Sub_Group" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Bloomberg_Industry_Sector" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Country_of_Issuance" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Issue_Currency" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Issuer" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Risk_Currency" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Put_Date" Type="DateTime" />
+    <Property Name="Put_Price" Type="Decimal" Precision="20" Scale="10" />
+    <Property Name="Ask_Price" Type="Decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="High_Price" Type="Decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="Low_Price" Type="Decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="Open_Price" Type="Decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="Volume" Type="Decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="Bid_Price" Type="Decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="Last_Price" Type="Decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="Call_Date" Type="DateTime" />
+    <Property Name="Call_Price" Type="Decimal" Precision="20" Scale="10" />
+  </EntityType>
+  <EntityType Name="SM_EQUITY">
+    <Key>
+      <PropertyRef Name="Equity_Id" />
+    </Key>
+    <Property Name="Equity_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Security_Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Security_Description" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Has_Position" Type="Boolean" Nullable="false" />
+    <Property Name="Is_Active" Type="Boolean" Nullable="false" />
+    <Property Name="Round_Lot_Size" Type="Decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="Bloomberg_Unique_Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CUSIP" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="ISIN" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="SEDOL" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Bloomberg_Ticker" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Bloomberg_Unique_ID" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Bloomberg_Global_ID" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Bloomberg_Ticker_And_Exchange" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Is_ADR" Type="Boolean" Nullable="false" />
+    <Property Name="ADR_Underlying_Ticker" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ADR_Underlying_Currency" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Shares_Per_ADR" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="IPO_Date" Type="DateTime" />
+    <Property Name="Pricing_Currency" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Settle_Days" Type="Int32" Nullable="false" />
+    <Property Name="Total_Shares_Outstanding" Type="Decimal" Precision="20" Scale="10" />
+    <Property Name="Voting_Rights_Per_Share" Type="Decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="Average_Volume_20Day" Type="Decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="Beta" Type="Decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="Short_Interest" Type="Decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="YTD_Return" Type="Decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="Price_Volatility_90Day" Type="Decimal" Precision="20" Scale="10" />
+    <Property Name="Form_PF_Asset_Class" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Form_PF_Country" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Form_PF_Credit_Rating" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Form_PF_Currency" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Form_PF_Instrument" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Form_PF_Liquidity_Profile" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Form_PF_Maturity" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Form_PF_NAICS_Code" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Form_PF_Region" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Form_PF_Sector" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Form_PF_Sub_Asset_Class" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Issue_Country" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Exchange" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Issuer" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Issue_Currency" Type="String" Nullable="false" MaxLength="3" Unicode="true" FixedLength="true" />
+    <Property Name="Trading_Currency" Type="String" Nullable="false" MaxLength="3" Unicode="true" FixedLength="true" />
+    <Property Name="Bloomberg_Industry_Sub_Group" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Bloomberg_Industry_Group" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Bloomberg_Industry_Sector" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Country_Of_Incorporation" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Risk_Currency" Type="String" Nullable="false" MaxLength="3" Unicode="true" FixedLength="true" />
+    <Property Name="Open_Price" Type="Decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="Close_Price" Type="Decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="Volume" Type="Decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="Last_Price" Type="Decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="Ask_Price" Type="Decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="Bid_Price" Type="Decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="PE_Ratio" Type="Decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="Declared_Date" Type="DateTime" Nullable="false" />
+    <Property Name="Ex_Date" Type="DateTime" Nullable="false" />
+    <Property Name="Record_Date" Type="DateTime" Nullable="false" />
+    <Property Name="Pay_Date" Type="DateTime" Nullable="false" />
+    <Property Name="Dividend_Amount" Type="Decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="Frequency" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Dividend_Type" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+</Schema>

@@ -1,7 +1,8 @@
 
 
 .stepwizard-step p {
-    margin-top: 30px;
+    margin-top: 20px;
+    padding: 10px;
 }
 
 .stepwizard-row {

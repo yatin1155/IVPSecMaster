@@ -12,20 +12,15 @@ VM = function () {
         return props;
     });
 };
-$(document).ready(function () {
+$(document).ready(function () { 
     loadData("equity");
+    callsampleservice();
     $("#aBond").click(function () {
         loadData("bond");
     });
     $("#aEquity").click(function () {
         loadData("equity");
     });
-
-
-    alert("calling");
-    debugger;
-    callsampleservice();
-
 });
 
 
@@ -38,6 +33,8 @@ function loadData(secType) {
 
         var vm = new VM();
         ko.applyBindings(vm);
+        
+        
         // apply DataTables magic
 
         var parsedata = JSON.parse(data.GetJsonResultResult);
@@ -51,36 +48,31 @@ function loadData(secType) {
     });
 }
 
-ko.bindingHandlers.clickAndStop = {
-    init: function (element, valueAccessor, allBindingsAccessor, viewModel, context) {
-        var handler = ko.utils.unwrapObservable(valueAccessor()),
-            newValueAccessor = function () {
-                return function (data, event) {
-                    handler.call(viewModel, data, event);
-                    event.cancelBubble = true;
-                    if (event.stopPropagation) event.stopPropagation();
-                };
-            };
 
-        ko.bindingHandlers.click.init(element, newValueAccessor, allBindingsAccessor, viewModel, context);
-    }
-};
+//Posting data from Form to Backend
 
+var sendEquityDataToServer = function () {
+    const form1 = $('#Equity_Form')[0];
+    // Get the form data with our (yet to be defined) function.
+    const jdata = getFormDataAsJSON(form1);
 
-var callsampleservice = function () {
-
-    $.ajax({
-        type: "POST",
-        url: "http://localhost:35798/RestServiceImpl.svc/UpsertEquity",
-        data: JSON.stringify({ "name": "asd" }),
-        success: function (a) {
-            debugger;
-
-        }
-                , datatype: "application/json"
-        //,contentType: "application/json; charset=utf-8"
-        //        dataType: 'json',
-        //        contentType: "application/json"
-    });
-
+    console.log(JSON.stringify(jdata))
+    alert(JSON.stringify(jdata)); 
+    $.getJSON("http://localhost:35798/RestServiceImpl.svc/json/UpsertEquity/" + JSON.stringify(jdata), function (data) {
+        // This callback is executed if the post was successful
+        alert(data);     
+    })
 }
+
+function getFormDataAsJSON(form){
+    var array = jQuery(form).serializeArray();
+    var json = {};
+    
+    jQuery.each(array, function() {
+        json[this.name] = this.value || '';
+    });
+    
+    return json;
+}
+
+

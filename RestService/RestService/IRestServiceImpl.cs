@@ -21,12 +21,19 @@ namespace RestService
             UriTemplate = "json/{id}")]
         string GetJsonResult(string id);
 
-
         [OperationContract]
         [WebInvoke(Method = "POST",
-                    RequestFormat = WebMessageFormat.Json,
-                    ResponseFormat = WebMessageFormat.Json,
-                    UriTemplate = "UpsertEquity")]
-        string UpsertEquity(string name);
+            ResponseFormat = WebMessageFormat.Json,
+            BodyStyle = WebMessageBodyStyle.Wrapped,
+            UriTemplate = "json/upsertEquity/{data}")]
+        string UpsertEquity(string data);
+
+
+        //[OperationContract]
+        //[WebInvoke(Method = "POST",
+        //            RequestFormat = WebMessageFormat.Json,
+        //            ResponseFormat = WebMessageFormat.Json,
+        //            UriTemplate = "UpsertEquity")]
+        //string UpsertEquity(string name);
     }
 }

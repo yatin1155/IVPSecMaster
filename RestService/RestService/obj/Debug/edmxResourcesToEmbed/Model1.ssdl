@@ -1,0 +1,427 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Group4Model.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="Group4ModelStoreContainer">
+    <EntitySet Name="EmpTable" EntityType="Group4Model.Store.EmpTable" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SM_BOND" EntityType="Group4Model.Store.SM_BOND" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SM_EQUITY" EntityType="Group4Model.Store.SM_EQUITY" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="EmpTable">
+    <Key>
+      <PropertyRef Name="EmpId" />
+    </Key>
+    <Property Name="EmpId" Type="int" Nullable="false" />
+    <Property Name="EmpName" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="SM_BOND">
+    <Key>
+      <PropertyRef Name="Bond_Id" />
+    </Key>
+    <Property Name="Bond_Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Security_Description" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Security_Name" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Asset_Type" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Trading_Factor" Type="decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="Pricing_Factor" Type="decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="ISIN" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="BBG_Ticker" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="BBG_Unique_ID" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CUSIP" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="SEDOL" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="First_Coupon_Date" Type="date" Nullable="false" />
+    <Property Name="Cap" Type="nvarchar" MaxLength="50" />
+    <Property Name="Floor" Type="nvarchar" MaxLength="50" />
+    <Property Name="Coupon_Frequency" Type="int" Nullable="false" />
+    <Property Name="Coupon" Type="decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="Coupon_Type" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Spread" Type="nvarchar" MaxLength="50" />
+    <Property Name="Callable_Flag" Type="bit" Nullable="false" />
+    <Property Name="Fix_To_Float_Flag" Type="bit" Nullable="false" />
+    <Property Name="Putable_Flag" Type="bit" Nullable="false" />
+    <Property Name="Issue_Date" Type="date" Nullable="false" />
+    <Property Name="Last_Reset_Date" Type="date" />
+    <Property Name="Maturity" Type="date" Nullable="false" />
+    <Property Name="Call_Notification_Max_Days" Type="decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="Put_Notification_Max_Days" Type="int" />
+    <Property Name="Penultimate_Coupon_Date" Type="date" Nullable="false" />
+    <Property Name="Reset_Frequency" Type="nvarchar" MaxLength="50" />
+    <Property Name="Has_Position" Type="bit" Nullable="false" />
+    <Property Name="Macaulay_Duration" Type="decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="Volatility_30D" Type="decimal" Precision="20" Scale="10" />
+    <Property Name="Volatility_90D" Type="decimal" Precision="20" Scale="10" />
+    <Property Name="Convexity" Type="decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="Average_Volume_30D" Type="decimal" Precision="20" Scale="10" />
+    <Property Name="PF_Asset_Class" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="PF_Country" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="PF_Credit_Rating" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="PF_Currency" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="PF_Instrument" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="PF_Liquidity_Profile" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="PF_Maturity" Type="nvarchar" MaxLength="50" />
+    <Property Name="PF_NAICS_Code" Type="nvarchar" MaxLength="50" />
+    <Property Name="PF_Region" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="PF_Sector" Type="nvarchar" MaxLength="50" />
+    <Property Name="PF_Sub_Asset_Class" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Bloomberg_Industry_Group" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Bloomberg_Industry_Sub_Group" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Bloomberg_Industry_Sector" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Country_of_Issuance" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Issue_Currency" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Issuer" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Risk_Currency" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Put_Date" Type="date" />
+    <Property Name="Put_Price" Type="decimal" Precision="20" Scale="10" />
+    <Property Name="Ask_Price" Type="decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="High_Price" Type="decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="Low_Price" Type="decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="Open_Price" Type="decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="Volume" Type="decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="Bid_Price" Type="decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="Last_Price" Type="decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="Call_Date" Type="date" />
+    <Property Name="Call_Price" Type="decimal" Precision="20" Scale="10" />
+  </EntityType>
+  <EntityType Name="SM_EQUITY">
+    <Key>
+      <PropertyRef Name="Equity_Id" />
+    </Key>
+    <Property Name="Equity_Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Security_Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Security_Description" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Has_Position" Type="bit" Nullable="false" />
+    <Property Name="Is_Active" Type="bit" Nullable="false" />
+    <Property Name="Round_Lot_Size" Type="decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="Bloomberg_Unique_Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CUSIP" Type="nchar" MaxLength="10" />
+    <Property Name="ISIN" Type="nvarchar" MaxLength="50" />
+    <Property Name="SEDOL" Type="nvarchar" MaxLength="50" />
+    <Property Name="Bloomberg_Ticker" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Bloomberg_Unique_ID" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Bloomberg_Global_ID" Type="nvarchar" MaxLength="50" />
+    <Property Name="Bloomberg_Ticker_And_Exchange" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Is_ADR" Type="bit" Nullable="false" />
+    <Property Name="ADR_Underlying_Ticker" Type="nvarchar" MaxLength="50" />
+    <Property Name="ADR_Underlying_Currency" Type="nvarchar" MaxLength="50" />
+    <Property Name="Shares_Per_ADR" Type="nvarchar" MaxLength="50" />
+    <Property Name="IPO_Date" Type="date" />
+    <Property Name="Pricing_Currency" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Settle_Days" Type="int" Nullable="false" />
+    <Property Name="Total_Shares_Outstanding" Type="decimal" Precision="20" Scale="10" />
+    <Property Name="Voting_Rights_Per_Share" Type="decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="Average_Volume_20Day" Type="decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="Beta" Type="decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="Short_Interest" Type="decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="YTD_Return" Type="decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="Price_Volatility_90Day" Type="decimal" Precision="20" Scale="10" />
+    <Property Name="Form_PF_Asset_Class" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Form_PF_Country" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Form_PF_Credit_Rating" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Form_PF_Currency" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Form_PF_Instrument" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Form_PF_Liquidity_Profile" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Form_PF_Maturity" Type="nvarchar" MaxLength="50" />
+    <Property Name="Form_PF_NAICS_Code" Type="nvarchar" MaxLength="50" />
+    <Property Name="Form_PF_Region" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Form_PF_Sector" Type="nvarchar" MaxLength="50" />
+    <Property Name="Form_PF_Sub_Asset_Class" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Issue_Country" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Exchange" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Issuer" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Issue_Currency" Type="nchar" Nullable="false" MaxLength="3" />
+    <Property Name="Trading_Currency" Type="nchar" Nullable="false" MaxLength="3" />
+    <Property Name="Bloomberg_Industry_Sub_Group" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Bloomberg_Industry_Group" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Bloomberg_Industry_Sector" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Country_Of_Incorporation" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Risk_Currency" Type="nchar" Nullable="false" MaxLength="3" />
+    <Property Name="Open_Price" Type="decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="Close_Price" Type="decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="Volume" Type="decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="Last_Price" Type="decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="Ask_Price" Type="decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="Bid_Price" Type="decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="PE_Ratio" Type="decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="Declared_Date" Type="date" Nullable="false" />
+    <Property Name="Ex_Date" Type="date" Nullable="false" />
+    <Property Name="Record_Date" Type="date" Nullable="false" />
+    <Property Name="Pay_Date" Type="date" Nullable="false" />
+    <Property Name="Dividend_Amount" Type="decimal" Nullable="false" Precision="20" Scale="10" />
+    <Property Name="Frequency" Type="nvarchar" MaxLength="50" />
+    <Property Name="Dividend_Type" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <Function Name="ColumnNameSelect" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TableName" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SM_BONDDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Bond_Id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SM_BONDInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Security_Description" Type="nvarchar" Mode="In" />
+    <Parameter Name="Security_Name" Type="nvarchar" Mode="In" />
+    <Parameter Name="Asset_Type" Type="nvarchar" Mode="In" />
+    <Parameter Name="Trading_Factor" Type="decimal" Mode="In" />
+    <Parameter Name="Pricing_Factor" Type="decimal" Mode="In" />
+    <Parameter Name="ISIN" Type="nvarchar" Mode="In" />
+    <Parameter Name="BBG_Ticker" Type="nvarchar" Mode="In" />
+    <Parameter Name="BBG_Unique_ID" Type="nvarchar" Mode="In" />
+    <Parameter Name="CUSIP" Type="nvarchar" Mode="In" />
+    <Parameter Name="SEDOL" Type="nvarchar" Mode="In" />
+    <Parameter Name="First_Coupon_Date" Type="date" Mode="In" />
+    <Parameter Name="Cap" Type="nvarchar" Mode="In" />
+    <Parameter Name="Floor" Type="nvarchar" Mode="In" />
+    <Parameter Name="Coupon_Frequency" Type="int" Mode="In" />
+    <Parameter Name="Coupon" Type="decimal" Mode="In" />
+    <Parameter Name="Coupon_Type" Type="nvarchar" Mode="In" />
+    <Parameter Name="Spread" Type="nvarchar" Mode="In" />
+    <Parameter Name="Callable_Flag" Type="bit" Mode="In" />
+    <Parameter Name="Fix_To_Float_Flag" Type="bit" Mode="In" />
+    <Parameter Name="Putable_Flag" Type="bit" Mode="In" />
+    <Parameter Name="Issue_Date" Type="date" Mode="In" />
+    <Parameter Name="Last_Reset_Date" Type="date" Mode="In" />
+    <Parameter Name="Maturity" Type="date" Mode="In" />
+    <Parameter Name="Call_Notification_Max_Days" Type="decimal" Mode="In" />
+    <Parameter Name="Put_Notification_Max_Days" Type="int" Mode="In" />
+    <Parameter Name="Penultimate_Coupon_Date" Type="date" Mode="In" />
+    <Parameter Name="Reset_Frequency" Type="nvarchar" Mode="In" />
+    <Parameter Name="Has_Position" Type="bit" Mode="In" />
+    <Parameter Name="Macaulay_Duration" Type="decimal" Mode="In" />
+    <Parameter Name="p30D_Volatility" Type="decimal" Mode="In" />
+    <Parameter Name="p90D_Volatility" Type="decimal" Mode="In" />
+    <Parameter Name="Convexity" Type="decimal" Mode="In" />
+    <Parameter Name="p30Day_Average_Volume" Type="decimal" Mode="In" />
+    <Parameter Name="PF_Asset_Class" Type="nvarchar" Mode="In" />
+    <Parameter Name="PF_Country" Type="nvarchar" Mode="In" />
+    <Parameter Name="PF_Credit_Rating" Type="nvarchar" Mode="In" />
+    <Parameter Name="PF_Currency" Type="nvarchar" Mode="In" />
+    <Parameter Name="PF_Instrument" Type="nvarchar" Mode="In" />
+    <Parameter Name="PF_Liquidity_Profile" Type="nvarchar" Mode="In" />
+    <Parameter Name="PF_Maturity" Type="nvarchar" Mode="In" />
+    <Parameter Name="PF_NAICS_Code" Type="nvarchar" Mode="In" />
+    <Parameter Name="PF_Region" Type="nvarchar" Mode="In" />
+    <Parameter Name="PF_Sector" Type="nvarchar" Mode="In" />
+    <Parameter Name="PF_Sub_Asset_Class" Type="nvarchar" Mode="In" />
+    <Parameter Name="Bloomberg_Industry_Group" Type="nvarchar" Mode="In" />
+    <Parameter Name="Bloomberg_Industry_Sub_Group" Type="nvarchar" Mode="In" />
+    <Parameter Name="Bloomberg_Industry_Sector" Type="nvarchar" Mode="In" />
+    <Parameter Name="Country_of_Issuance" Type="nvarchar" Mode="In" />
+    <Parameter Name="Issue_Currency" Type="nvarchar" Mode="In" />
+    <Parameter Name="Issuer" Type="nvarchar" Mode="In" />
+    <Parameter Name="Risk_Currency" Type="nvarchar" Mode="In" />
+    <Parameter Name="Put_Date" Type="date" Mode="In" />
+    <Parameter Name="Put_Price" Type="decimal" Mode="In" />
+    <Parameter Name="Ask_Price" Type="decimal" Mode="In" />
+    <Parameter Name="High_Price" Type="decimal" Mode="In" />
+    <Parameter Name="Low_Price" Type="decimal" Mode="In" />
+    <Parameter Name="Open_Price" Type="decimal" Mode="In" />
+    <Parameter Name="Volume" Type="decimal" Mode="In" />
+    <Parameter Name="Bid_Price" Type="decimal" Mode="In" />
+    <Parameter Name="Last_Price" Type="decimal" Mode="In" />
+    <Parameter Name="Call_Date" Type="date" Mode="In" />
+    <Parameter Name="Call_Price" Type="decimal" Mode="In" />
+  </Function>
+  <Function Name="SM_BONDSelect" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Bond_Id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SM_BONDUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Bond_Id" Type="int" Mode="In" />
+    <Parameter Name="Security_Description" Type="nvarchar" Mode="In" />
+    <Parameter Name="Security_Name" Type="nvarchar" Mode="In" />
+    <Parameter Name="Asset_Type" Type="nvarchar" Mode="In" />
+    <Parameter Name="Trading_Factor" Type="decimal" Mode="In" />
+    <Parameter Name="Pricing_Factor" Type="decimal" Mode="In" />
+    <Parameter Name="ISIN" Type="nvarchar" Mode="In" />
+    <Parameter Name="BBG_Ticker" Type="nvarchar" Mode="In" />
+    <Parameter Name="BBG_Unique_ID" Type="nvarchar" Mode="In" />
+    <Parameter Name="CUSIP" Type="nvarchar" Mode="In" />
+    <Parameter Name="SEDOL" Type="nvarchar" Mode="In" />
+    <Parameter Name="First_Coupon_Date" Type="date" Mode="In" />
+    <Parameter Name="Cap" Type="nvarchar" Mode="In" />
+    <Parameter Name="Floor" Type="nvarchar" Mode="In" />
+    <Parameter Name="Coupon_Frequency" Type="int" Mode="In" />
+    <Parameter Name="Coupon" Type="decimal" Mode="In" />
+    <Parameter Name="Coupon_Type" Type="nvarchar" Mode="In" />
+    <Parameter Name="Spread" Type="nvarchar" Mode="In" />
+    <Parameter Name="Callable_Flag" Type="bit" Mode="In" />
+    <Parameter Name="Fix_To_Float_Flag" Type="bit" Mode="In" />
+    <Parameter Name="Putable_Flag" Type="bit" Mode="In" />
+    <Parameter Name="Issue_Date" Type="date" Mode="In" />
+    <Parameter Name="Last_Reset_Date" Type="date" Mode="In" />
+    <Parameter Name="Maturity" Type="date" Mode="In" />
+    <Parameter Name="Call_Notification_Max_Days" Type="decimal" Mode="In" />
+    <Parameter Name="Put_Notification_Max_Days" Type="int" Mode="In" />
+    <Parameter Name="Penultimate_Coupon_Date" Type="date" Mode="In" />
+    <Parameter Name="Reset_Frequency" Type="nvarchar" Mode="In" />
+    <Parameter Name="Has_Position" Type="bit" Mode="In" />
+    <Parameter Name="Macaulay_Duration" Type="decimal" Mode="In" />
+    <Parameter Name="p30D_Volatility" Type="decimal" Mode="In" />
+    <Parameter Name="p90D_Volatility" Type="decimal" Mode="In" />
+    <Parameter Name="Convexity" Type="decimal" Mode="In" />
+    <Parameter Name="p30Day_Average_Volume" Type="decimal" Mode="In" />
+    <Parameter Name="PF_Asset_Class" Type="nvarchar" Mode="In" />
+    <Parameter Name="PF_Country" Type="nvarchar" Mode="In" />
+    <Parameter Name="PF_Credit_Rating" Type="nvarchar" Mode="In" />
+    <Parameter Name="PF_Currency" Type="nvarchar" Mode="In" />
+    <Parameter Name="PF_Instrument" Type="nvarchar" Mode="In" />
+    <Parameter Name="PF_Liquidity_Profile" Type="nvarchar" Mode="In" />
+    <Parameter Name="PF_Maturity" Type="nvarchar" Mode="In" />
+    <Parameter Name="PF_NAICS_Code" Type="nvarchar" Mode="In" />
+    <Parameter Name="PF_Region" Type="nvarchar" Mode="In" />
+    <Parameter Name="PF_Sector" Type="nvarchar" Mode="In" />
+    <Parameter Name="PF_Sub_Asset_Class" Type="nvarchar" Mode="In" />
+    <Parameter Name="Bloomberg_Industry_Group" Type="nvarchar" Mode="In" />
+    <Parameter Name="Bloomberg_Industry_Sub_Group" Type="nvarchar" Mode="In" />
+    <Parameter Name="Bloomberg_Industry_Sector" Type="nvarchar" Mode="In" />
+    <Parameter Name="Country_of_Issuance" Type="nvarchar" Mode="In" />
+    <Parameter Name="Issue_Currency" Type="nvarchar" Mode="In" />
+    <Parameter Name="Issuer" Type="nvarchar" Mode="In" />
+    <Parameter Name="Risk_Currency" Type="nvarchar" Mode="In" />
+    <Parameter Name="Put_Date" Type="date" Mode="In" />
+    <Parameter Name="Put_Price" Type="decimal" Mode="In" />
+    <Parameter Name="Ask_Price" Type="decimal" Mode="In" />
+    <Parameter Name="High_Price" Type="decimal" Mode="In" />
+    <Parameter Name="Low_Price" Type="decimal" Mode="In" />
+    <Parameter Name="Open_Price" Type="decimal" Mode="In" />
+    <Parameter Name="Volume" Type="decimal" Mode="In" />
+    <Parameter Name="Bid_Price" Type="decimal" Mode="In" />
+    <Parameter Name="Last_Price" Type="decimal" Mode="In" />
+    <Parameter Name="Call_Date" Type="date" Mode="In" />
+    <Parameter Name="Call_Price" Type="decimal" Mode="In" />
+  </Function>
+  <Function Name="SM_EQUITYDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Equity_Id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SM_EQUITYInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Security_Name" Type="nvarchar" Mode="In" />
+    <Parameter Name="Security_Description" Type="nvarchar" Mode="In" />
+    <Parameter Name="Has_Position" Type="bit" Mode="In" />
+    <Parameter Name="Is_Active" Type="bit" Mode="In" />
+    <Parameter Name="Round_Lot_Size" Type="decimal" Mode="In" />
+    <Parameter Name="Bloomberg_Unique_Name" Type="nvarchar" Mode="In" />
+    <Parameter Name="CUSIP" Type="nchar" Mode="In" />
+    <Parameter Name="ISIN" Type="nvarchar" Mode="In" />
+    <Parameter Name="SEDOL" Type="nvarchar" Mode="In" />
+    <Parameter Name="Bloomberg_Ticker" Type="nvarchar" Mode="In" />
+    <Parameter Name="Bloomberg_Unique_ID" Type="nvarchar" Mode="In" />
+    <Parameter Name="Bloomberg_Global_ID" Type="nvarchar" Mode="In" />
+    <Parameter Name="Bloomberg_Ticker_And_Exchange" Type="nvarchar" Mode="In" />
+    <Parameter Name="Is_ADR" Type="bit" Mode="In" />
+    <Parameter Name="ADR_Underlying_Ticker" Type="nvarchar" Mode="In" />
+    <Parameter Name="ADR_Underlying_Currency" Type="nvarchar" Mode="In" />
+    <Parameter Name="Shares_Per_ADR" Type="nvarchar" Mode="In" />
+    <Parameter Name="IPO_Date" Type="date" Mode="In" />
+    <Parameter Name="Pricing_Currency" Type="nvarchar" Mode="In" />
+    <Parameter Name="Settle_Days" Type="int" Mode="In" />
+    <Parameter Name="Total_Shares_Outstanding" Type="decimal" Mode="In" />
+    <Parameter Name="Voting_Rights_Per_Share" Type="decimal" Mode="In" />
+    <Parameter Name="Average_Volume_20Day" Type="decimal" Mode="In" />
+    <Parameter Name="Beta" Type="decimal" Mode="In" />
+    <Parameter Name="Short_Interest" Type="decimal" Mode="In" />
+    <Parameter Name="YTD_Return" Type="decimal" Mode="In" />
+    <Parameter Name="Price_Volatility_90Day" Type="decimal" Mode="In" />
+    <Parameter Name="Form_PF_Asset_Class" Type="nvarchar" Mode="In" />
+    <Parameter Name="Form_PF_Country" Type="nvarchar" Mode="In" />
+    <Parameter Name="Form_PF_Credit_Rating" Type="nvarchar" Mode="In" />
+    <Parameter Name="Form_PF_Currency" Type="nvarchar" Mode="In" />
+    <Parameter Name="Form_PF_Instrument" Type="nvarchar" Mode="In" />
+    <Parameter Name="Form_PF_Liquidity_Profile" Type="nvarchar" Mode="In" />
+    <Parameter Name="Form_PF_Maturity" Type="nvarchar" Mode="In" />
+    <Parameter Name="Form_PF_NAICS_Code" Type="nvarchar" Mode="In" />
+    <Parameter Name="Form_PF_Region" Type="nvarchar" Mode="In" />
+    <Parameter Name="Form_PF_Sector" Type="nvarchar" Mode="In" />
+    <Parameter Name="Form_PF_Sub_Asset_Class" Type="nvarchar" Mode="In" />
+    <Parameter Name="Issue_Country" Type="nvarchar" Mode="In" />
+    <Parameter Name="Exchange" Type="nvarchar" Mode="In" />
+    <Parameter Name="Issuer" Type="nvarchar" Mode="In" />
+    <Parameter Name="Issue_Currency" Type="nchar" Mode="In" />
+    <Parameter Name="Trading_Currency" Type="nchar" Mode="In" />
+    <Parameter Name="Bloomberg_Industry_Sub_Group" Type="nvarchar" Mode="In" />
+    <Parameter Name="Bloomberg_Industry_Group" Type="nvarchar" Mode="In" />
+    <Parameter Name="Bloomberg_Industry_Sector" Type="nvarchar" Mode="In" />
+    <Parameter Name="Country_Of_Incorporation" Type="nvarchar" Mode="In" />
+    <Parameter Name="Risk_Currency" Type="nchar" Mode="In" />
+    <Parameter Name="Open_Price" Type="decimal" Mode="In" />
+    <Parameter Name="Close_Price" Type="decimal" Mode="In" />
+    <Parameter Name="Volume" Type="decimal" Mode="In" />
+    <Parameter Name="Last_Price" Type="decimal" Mode="In" />
+    <Parameter Name="Ask_Price" Type="decimal" Mode="In" />
+    <Parameter Name="Bid_Price" Type="decimal" Mode="In" />
+    <Parameter Name="PE_Ratio" Type="decimal" Mode="In" />
+    <Parameter Name="Declared_Date" Type="date" Mode="In" />
+    <Parameter Name="Ex_Date" Type="date" Mode="In" />
+    <Parameter Name="Record_Date" Type="date" Mode="In" />
+    <Parameter Name="Pay_Date" Type="date" Mode="In" />
+    <Parameter Name="Dividend_Amount" Type="decimal" Mode="In" />
+    <Parameter Name="Frequency" Type="nvarchar" Mode="In" />
+    <Parameter Name="Dividend_Type" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="SM_EQUITYSelect" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Equity_Id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SM_EQUITYUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Equity_Id" Type="int" Mode="In" />
+    <Parameter Name="Security_Name" Type="nvarchar" Mode="In" />
+    <Parameter Name="Security_Description" Type="nvarchar" Mode="In" />
+    <Parameter Name="Has_Position" Type="bit" Mode="In" />
+    <Parameter Name="Is_Active" Type="bit" Mode="In" />
+    <Parameter Name="Round_Lot_Size" Type="decimal" Mode="In" />
+    <Parameter Name="Bloomberg_Unique_Name" Type="nvarchar" Mode="In" />
+    <Parameter Name="CUSIP" Type="nchar" Mode="In" />
+    <Parameter Name="ISIN" Type="nvarchar" Mode="In" />
+    <Parameter Name="SEDOL" Type="nvarchar" Mode="In" />
+    <Parameter Name="Bloomberg_Ticker" Type="nvarchar" Mode="In" />
+    <Parameter Name="Bloomberg_Unique_ID" Type="nvarchar" Mode="In" />
+    <Parameter Name="Bloomberg_Global_ID" Type="nvarchar" Mode="In" />
+    <Parameter Name="Bloomberg_Ticker_And_Exchange" Type="nvarchar" Mode="In" />
+    <Parameter Name="Is_ADR" Type="bit" Mode="In" />
+    <Parameter Name="ADR_Underlying_Ticker" Type="nvarchar" Mode="In" />
+    <Parameter Name="ADR_Underlying_Currency" Type="nvarchar" Mode="In" />
+    <Parameter Name="Shares_Per_ADR" Type="nvarchar" Mode="In" />
+    <Parameter Name="IPO_Date" Type="date" Mode="In" />
+    <Parameter Name="Pricing_Currency" Type="nvarchar" Mode="In" />
+    <Parameter Name="Settle_Days" Type="int" Mode="In" />
+    <Parameter Name="Total_Shares_Outstanding" Type="decimal" Mode="In" />
+    <Parameter Name="Voting_Rights_Per_Share" Type="decimal" Mode="In" />
+    <Parameter Name="Average_Volume_20Day" Type="decimal" Mode="In" />
+    <Parameter Name="Beta" Type="decimal" Mode="In" />
+    <Parameter Name="Short_Interest" Type="decimal" Mode="In" />
+    <Parameter Name="YTD_Return" Type="decimal" Mode="In" />
+    <Parameter Name="Price_Volatility_90Day" Type="decimal" Mode="In" />
+    <Parameter Name="Form_PF_Asset_Class" Type="nvarchar" Mode="In" />
+    <Parameter Name="Form_PF_Country" Type="nvarchar" Mode="In" />
+    <Parameter Name="Form_PF_Credit_Rating" Type="nvarchar" Mode="In" />
+    <Parameter Name="Form_PF_Currency" Type="nvarchar" Mode="In" />
+    <Parameter Name="Form_PF_Instrument" Type="nvarchar" Mode="In" />
+    <Parameter Name="Form_PF_Liquidity_Profile" Type="nvarchar" Mode="In" />
+    <Parameter Name="Form_PF_Maturity" Type="nvarchar" Mode="In" />
+    <Parameter Name="Form_PF_NAICS_Code" Type="nvarchar" Mode="In" />
+    <Parameter Name="Form_PF_Region" Type="nvarchar" Mode="In" />
+    <Parameter Name="Form_PF_Sector" Type="nvarchar" Mode="In" />
+    <Parameter Name="Form_PF_Sub_Asset_Class" Type="nvarchar" Mode="In" />
+    <Parameter Name="Issue_Country" Type="nvarchar" Mode="In" />
+    <Parameter Name="Exchange" Type="nvarchar" Mode="In" />
+    <Parameter Name="Issuer" Type="nvarchar" Mode="In" />
+    <Parameter Name="Issue_Currency" Type="nchar" Mode="In" />
+    <Parameter Name="Trading_Currency" Type="nchar" Mode="In" />
+    <Parameter Name="Bloomberg_Industry_Sub_Group" Type="nvarchar" Mode="In" />
+    <Parameter Name="Bloomberg_Industry_Group" Type="nvarchar" Mode="In" />
+    <Parameter Name="Bloomberg_Industry_Sector" Type="nvarchar" Mode="In" />
+    <Parameter Name="Country_Of_Incorporation" Type="nvarchar" Mode="In" />
+    <Parameter Name="Risk_Currency" Type="nchar" Mode="In" />
+    <Parameter Name="Open_Price" Type="decimal" Mode="In" />
+    <Parameter Name="Close_Price" Type="decimal" Mode="In" />
+    <Parameter Name="Volume" Type="decimal" Mode="In" />
+    <Parameter Name="Last_Price" Type="decimal" Mode="In" />
+    <Parameter Name="Ask_Price" Type="decimal" Mode="In" />
+    <Parameter Name="Bid_Price" Type="decimal" Mode="In" />
+    <Parameter Name="PE_Ratio" Type="decimal" Mode="In" />
+    <Parameter Name="Declared_Date" Type="date" Mode="In" />
+    <Parameter Name="Ex_Date" Type="date" Mode="In" />
+    <Parameter Name="Record_Date" Type="date" Mode="In" />
+    <Parameter Name="Pay_Date" Type="date" Mode="In" />
+    <Parameter Name="Dividend_Amount" Type="decimal" Mode="In" />
+    <Parameter Name="Frequency" Type="nvarchar" Mode="In" />
+    <Parameter Name="Dividend_Type" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="TableNameSelect" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TableCatalog" Type="varchar" Mode="In" />
+  </Function>
+</Schema>

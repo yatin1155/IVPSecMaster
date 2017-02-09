@@ -6,6 +6,9 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Configuration;
 using Newtonsoft.Json;
+using System.ComponentModel;
+using System.Web.Script.Serialization;
+using Newtonsoft.Json.Linq;
   
 
 namespace RestService
@@ -55,9 +58,44 @@ namespace RestService
         public string UpsertEquity(string data)
         {
             
-            Console.WriteLine("Service has been called " + data);
-            return "" ;
+            //Console.WriteLine("Service has been called " + data);
+            //List<SM_EQUITY> UserList = JsonConvert.DeserializeObject<List<SM_EQUITY>>(data);
+            //ToDataTable(UserList);
+
+            JavaScriptSerializer json_serializer = new JavaScriptSerializer();
+            SM_EQUITY routes_list = (SM_EQUITY)json_serializer.DeserializeObject(data);
+            using (var dbCtx = new Group4Entities())
+            {
+                dbCtx.AddToSM_EQUITY(routes_list);
+
+                // call SaveChanges method to save student into database
+                dbCtx.SaveChanges();
+            }
+            return "Success asshole" ;
         }
+
+
+        //public static DataTable ToDataTable<T>(this IList<T> data)
+        //{
+        //    PropertyDescriptorCollection props =
+        //    TypeDescriptor.GetProperties(typeof(T));
+        //    DataTable table = new DataTable();
+        //    for (int i = 0; i < props.Count; i++)
+        //    {
+        //        PropertyDescriptor prop = props[i];
+        //        table.Columns.Add(prop.Name, prop.PropertyType);
+        //    }
+        //    object[] values = new object[props.Count];
+        //    foreach (T item in data)
+        //    {
+        //        for (int i = 0; i < values.Length; i++)
+        //        {
+        //            values[i] = props[i].GetValue(item);
+        //        }
+        //        table.Rows.Add(values);
+        //    }
+        //    return table;
+        //}
         #endregion
     }
 }
