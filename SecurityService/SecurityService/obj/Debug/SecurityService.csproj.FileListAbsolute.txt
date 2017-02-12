@@ -1,0 +1,16 @@
+c:\users\vishal\documents\visual studio 2010\Projects\SecurityService\SecurityService\bin\SecurityService.dll
+c:\users\vishal\documents\visual studio 2010\Projects\SecurityService\SecurityService\bin\SecurityService.pdb
+c:\users\vishal\documents\visual studio 2010\Projects\SecurityService\SecurityService\obj\Debug\SecurityService.dll
+c:\users\vishal\documents\visual studio 2010\Projects\SecurityService\SecurityService\obj\Debug\SecurityService.pdb
+D:\Sufiyan\SecurityService\SecurityService\bin\SecurityService.dll
+D:\Sufiyan\SecurityService\SecurityService\bin\SecurityService.pdb
+D:\Sufiyan\SecurityService\SecurityService\obj\Debug\ResolveAssemblyReference.cache
+D:\Sufiyan\SecurityService\SecurityService\obj\Debug\SecurityService.dll
+D:\Sufiyan\SecurityService\SecurityService\obj\Debug\SecurityService.pdb
+D:\Sufiyan\SecurityService\SecurityService\bin\Newtonsoft.Json.dll
+D:\Sufiyan\SecurityService\SecurityService\bin\Newtonsoft.Json.xml
+D:\New_Sufiyan\IVPSecMaster\SecurityService\SecurityService\obj\Debug\ResolveAssemblyReference.cache
+D:\New_Sufiyan\IVPSecMaster\SecurityService\SecurityService\obj\Debug\SecurityService.dll
+D:\New_Sufiyan\IVPSecMaster\SecurityService\SecurityService\obj\Debug\SecurityService.pdb
+D:\New_Sufiyan\IVPSecMaster\SecurityService\SecurityService\bin\SecurityService.dll
+D:\New_Sufiyan\IVPSecMaster\SecurityService\SecurityService\bin\SecurityService.pdb

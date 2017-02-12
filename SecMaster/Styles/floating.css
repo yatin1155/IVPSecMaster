@@ -29,7 +29,7 @@
   height:60px;
   bottom:40px;
   right:40px;
-  background-color:#F33;
+  background-color:rgb(107, 80, 160);
   color:#FFF;
   border-radius:50px;
   text-align:center;
@@ -52,7 +52,7 @@ ul li{
 }
 
 ul li a{
-  background-color:#F33;
+  background-color:rgb(107, 80, 160);
   color:#FFF;
   border-radius:50px;
   text-align:center;

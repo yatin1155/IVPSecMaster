@@ -2,6 +2,20 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolderInsert" Runat="Server">
 
+<script>
+
+
+    $(document).ready(function () {
+        $('#datatables tbody').on('click', 'tr', function () {
+            var bid = this.id; // button ID 
+            var trid = $(this).closest('tr').attr('id'); // table row ID 
+           window.location = "http://localhost:50243/SecMaster/ClientWebPages/ClientSingleSecurity.aspx";
+            alert('You clicked on ' + trid);
+        });
+        loadData("equity");
+
+    });
+</script>
  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <!-- Header Container -->
   <div class="container" style="margin-top:100px">

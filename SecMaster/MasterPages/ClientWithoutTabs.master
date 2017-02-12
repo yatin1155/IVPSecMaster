@@ -7,7 +7,7 @@
   <header class="mdl-layout__header">
     <div class="mdl-layout__header-row">
       <!-- Title  of Header -->
-      <span class="mdl-layout-title">IVP Sec Master</span>
+      <span class="mdl-layout-title"><img style="height:50px" src="../assetes/logo-light.png" /></span>
     </div>
     <!-- Tab Bar Container , and Tab links -->
     
@@ -16,8 +16,9 @@
   <div class="mdl-layout__drawer">
     <span class="mdl-layout-title">IVP Sec Master</span>
     <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="#" onclick="loadData('equity')" id="aEquity">Equity</a>
-        <a class="mdl-navigation__link" href="#" onclick="loadData('bond')" id="aBond">Bond</a>
+        <a class="mdl-navigation__link" href="../ClientWebPages/ClientSecuritiesDashboard.aspx">Home</a>
+        <a class="mdl-navigation__link" href="../ClientWebPages/ClientSecuritiesDashboard.aspx" id="aEquity">Equity</a>
+        <a class="mdl-navigation__link" href="../ClientWebPages/ClientBondDashboard.aspx" id="aBond">Bond</a>
         <a class="mdl-navigation__link" href="#">Profile</a>
         <a class="mdl-navigation__link" href="#">Logout</a>
         <!--<a class="mdl-navigation__link" href="#">Contact</a>-->
